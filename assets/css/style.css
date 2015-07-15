@@ -1,0 +1,66 @@
+body {
+	height:100%;
+	margin:0;
+	padding:0;
+	background:white;
+}
+html {
+	height:100%;
+	margin:0;
+	padding:0;
+}
+
+
+#landing {
+	height:100%;
+	margin:0;
+	overflow:hidden;
+	position:relative;
+	
+
+}
+
+#land {
+	margin-left:-10px;
+}
+
+#overlay {
+	background:black;
+	position:absolute;
+	z-index:9;
+	width:2000px;
+	height:1000px;
+	opacity:0.7;
+
+}
+
+#about {
+	width:720px;
+	margin:auto;
+	margin-top:36px;
+
+}
+
+#navbar {
+	position:fixed;
+	background:white;
+	height:50px;
+	width:100%;
+	z-index:100;
+}
+
+ul {
+	list-style:none;
+}
+
+li {
+	display:block;
+	float: right;
+	margin-right:20px;
+	font-size:18px;
+}
+
+#home {
+	float:left;
+	margin-left:-5px;
+}
