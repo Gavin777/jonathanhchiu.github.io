@@ -8,9 +8,69 @@
 
 		<!--JS-->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="assets/js/jquery.waypoints.js"></script>
 		<script src = "assets\js\script.js"></script>
 
 		<!--fonts-->
 	</head>
-	<body></body>
+	<body>
+		<div id = "pageWrapper">
+			<!--navigation menu-->
+			<div id="navigation">
+				<div id="menu-div">
+					<img id="menu" src="assets/images/menu.png">
+				</div>
+				<nav class="menu-container">
+					<div id="x-div">
+			 			<img id="x" src="assets/images/x.png">
+		 			</div>
+					<ul>
+						<li class="sidebar-item" id = "about">About</li>
+						<li class="sidebar-item aboutsub">Homeroots</li>
+						<li class="sidebar-item aboutsub">Philosophy</li>
+						<li class="sidebar-item">Works</li>
+						<li class="sidebar-item">Ingredients</li>
+					</ul>
+				</nav>
+			</div>
+			<!--landing page-->
+			<section id="top">
+				<div id="landing-wrapper">
+					<img id="landing" src="assets/images/landing.jpg">
+					<a href="#content">
+						<img id="down" src="assets/images/down.png">
+					</a>
+				</div>
+			</section>
+			<!--content-->
+			<div id="content-wrapper">
+				<section id="content">
+					<img id="logo" src="assets/images/logo.png">
+					<div id="row-wrapper">
+						<div id="about" class="option">
+							<p class="description about-active">About</p>
+							<p class="subcategory">Homeroots<br><br>Philosophy</p>
+							<img id="beach" class="picture" src="assets/images/beach.jpg">
+						</div>
+						<div id="works" class="option">
+							<p class="description">Works</p>
+							<img id="flowers" class="picture" src="assets/images/flowers.jpg">
+						</div>
+						<div id="ingredients" class="option">
+							<p class="description">Ingredients</p>
+							<img id="palm" class="picture" src="assets/images/palm.jpg">
+						</div>
+					</div>
+				</section>
+				<section id="foot">
+					<div class="footer">
+						<a href="#top">
+							<div id="up">UP
+							</div>
+						</a>
+					</div>
+				</section>
+			</div>
+		</div>
+	</body>
 </html>
