@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	$("#menu").click(function(){
+	$(".menu").click(function(){
 		
 		$(".menu-container").addClass("menu-active");
 			$("body").addClass("no-scroll");
@@ -15,7 +15,7 @@ $(document).ready(function(){
 			$("body").addClass("no-scroll");
 		}
 */
-	$("#x").click(function(){
+	$(".x").click(function(){
 
 		$("body").removeClass("no-scroll");
   		$(".menu-container").removeClass("menu-active");
@@ -44,14 +44,14 @@ else {
 $(window).scroll(function(){
 
 var offsetY = $(window).scrollTop();
-var waypoint = $("#contentWrapper").offset().top;
+var waypoint = $("#content-wrapper").offset().top;
 var progress = offsetY / waypoint;
 var translate = -240 * progress;
 var zoom= 1 + 0.2 *progress;
+var light= 1 - (1.2 * progress);
 if (progress>= 0 && progress<=1) {
-$("#landing").css("transform", "translateY("+translate+"px)");
-$("#landing").css("transform", "scale("+zoom+")");
 
+$("#landing").css("opacity", light);
 }
 
 });

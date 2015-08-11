@@ -9,25 +9,25 @@
 		<!--JS-->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="assets/js/jquery.waypoints.js"></script>
+		<script type="text/javascript" src="assets/js/smoothscroll.js"></script>
 		<script src = "assets\js\script.js"></script>
 
 		<!--fonts-->
 	</head>
 	<body>
-		<div id = "pageWrapper">
+		<div class = "pageWrapper">
 			<!--navigation menu-->
-			<div id="navigation">
-				<div id="menu-div">
-					<img id="menu" src="assets/images/menu.png">
+			<div class="navigation">
+				<div class="menu-div">
+					<img class="menu" src="assets/images/menu.png">
 				</div>
 				<nav class="menu-container">
-					<div id="x-div">
-			 			<img id="x" src="assets/images/x.png">
+					<div class="x-div">
+			 			<img class="x" src="assets/images/x.png">
 		 			</div>
 					<ul>
-						<li class="sidebar-item" id = "about">About</li>
-						<li class="sidebar-item aboutsub">Homeroots</li>
-						<li class="sidebar-item aboutsub">Philosophy</li>
+						<li class="sidebar-item">Home</li>
+						<li class="sidebar-item">About</li>
 						<li class="sidebar-item">Works</li>
 						<li class="sidebar-item">Ingredients</li>
 					</ul>
@@ -37,8 +37,8 @@
 			<section id="top">
 				<div id="landing-wrapper">
 					<img id="landing" src="assets/images/landing.jpg">
-					<a href="#content">
-						<img id="down" src="assets/images/down.png">
+					<a href="#content" class="smoothScroll">
+						<img class="bounce" id="down" src="assets/images/down.png">
 					</a>
 				</div>
 			</section>
@@ -48,8 +48,7 @@
 					<img id="logo" src="assets/images/logo.png">
 					<div id="row-wrapper">
 						<div id="about" class="option">
-							<p class="description about-active">About</p>
-							<p class="subcategory">Homeroots<br><br>Philosophy</p>
+							<p class="description">About</p>
 							<img id="beach" class="picture" src="assets/images/beach.jpg">
 						</div>
 						<div id="works" class="option">
@@ -64,10 +63,26 @@
 				</section>
 				<section id="foot">
 					<div class="footer">
-						<a href="#top">
-							<div id="up">UP
+						<div class="footer-row-one">
+							<div class="footer-column newsletter">
+								Sign Up For Newsletter
 							</div>
-						</a>
+							<div class="footer-column social-media">
+								Social Media
+							</div>
+							<div class="footer-column contact">
+								Contact Us
+							</div>
+							<div class="footer-column buttons">
+								<a href="#top">
+									<div class="up">UP
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="footer-row-two">
+							Design by Jonathan Chiu and Gavin Lee. Photography by Crystal Ngo.
+						</div>
 					</div>
 				</section>
 			</div>

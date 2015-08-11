@@ -44,9 +44,11 @@ var waypoint = $("#contentWrapper").offset().top;
 var progress = offsetY / waypoint;
 var translate = -240 * progress;
 var zoom= 1 + 0.2 *progress;
+var light= 1 - (2 * progress);
 if (progress>= 0 && progress<=1) {
 $("#landing").css("transform", "translateY("+translate+"px)");
 $("#landing").css("transform", "scale("+zoom+")");
+$("#landing").css("opacity", light);
 
 }
 
