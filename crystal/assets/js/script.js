@@ -26,6 +26,16 @@ $(document).ready(function(){
 		$("#aboutsub").addClass("show");
 	});
 
+	$(".ing-square").click(function () {
+		var name = $(this).attr('id');
+		var desc = ".for[id='" + name + "-text']";
+		$(".for").removeClass("text-active");
+		$(".ing-square").removeClass("ing-active");
+		$("#" + name).addClass("ing-active");
+		$(desc).addClass("text-active");
+
+	})
+
 
 		
 /*	
@@ -44,14 +54,14 @@ else {
 $(window).scroll(function(){
 
 var offsetY = $(window).scrollTop();
-var waypoint = $("#content-wrapper").offset().top;
+var waypoint = $(".content-wrapper").offset().top;
 var progress = offsetY / waypoint;
 var translate = -240 * progress;
 var zoom= 1 + 0.2 *progress;
 var light= 1 - (1.2 * progress);
 if (progress>= 0 && progress<=1) {
 
-$("#landing").css("opacity", light);
+$(".landing").css("opacity", light);
 }
 
 });

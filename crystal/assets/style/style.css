@@ -1,3 +1,6 @@
+body {
+	font-family: Roboto;
+}
 /*The Navigation and Menu */
 .menu {
 	position:fixed;
@@ -52,7 +55,7 @@ ul {
 
 /*Landing Page */
 
-#landing-wrapper {
+.landing-wrapper {
 	position:fixed;
 	width:calc(100% - 40px);
 	height:calc(100vh - 40px);
@@ -63,7 +66,7 @@ ul {
 	overflow:hidden;
 }
 
-#landing {
+.landing {
 	position:absolute;
 	width:100%;
 	z-index:1;
@@ -97,9 +100,10 @@ ul {
 	animation: bounce 2s cubic-bezier(.4, 0, .5, .9) infinite;
 }
 
+
 /* content */
 
-#content-wrapper {
+.content-wrapper {
 	position:absolute;
 	top:100vh;
 	left:0;
@@ -110,7 +114,7 @@ ul {
 
 }
 
-#logo {
+.logo {
 	width:500px;
 	display:block;
 	margin-left:auto;
@@ -177,8 +181,7 @@ ul {
 .footer {
 	position:absolute;
 	height:250px;
-	width:calc(100% - 40px);
-	left:20px;
+	width: 100%;
 	bottom:0px;
 	background:gray;
 }
@@ -204,59 +207,34 @@ ul {
 
 }
 
+.home {
+	width:53px;
+	height:53px;
+	border: 2px solid white;
+	position:absolute;
+	top:24px;
+	right:100px;
+}
+
+.home-logo {
+	width:100%;
+}
+.footer-border {
+	position:absolute;
+	width:calc(100% - 40px);
+	height: calc(100% - 20px);
+	top:20px;
+	left:20px;
+	border-top: 2px solid white;
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+}
+
 .footer-row-two {
 	color:white;
-	font-size:18px;
+	font-size:12px;
 	position:absolute;
 	bottom:12px;
-	left:20px;
+	left:40px;
 }
 
-/* about page */
-
-#content-wrapper1 {
-	position:absolute;
-	left:20px;
-	top:20px;
-	width: calc(100% - 40px);
-	height:2500px;
-	background:black;
-
-}
-
-#content-wrapper2 {
-	position:absolute;
-	left:0;
-	top:0;
-	width:100%;
-	height:3000px;
-	background:orange;
-
-}
-
-#picture-wrapper {
-	position:absolute;
-	top:0;
-	right:0;
-	width: 66.5%;
-	height:2000px;
-	background:red;
-	overflow:hidden;
-}
-
-.about-picture {
-	height:500px;
-	width:100%;
-	margin-top:0;
-	overflow:hidden;
-}
-
-#text-wrapper {
-	position:absolute;
-	top:0;
-	left:0;
-	width:33%;
-	height:2000px;
-	background:green;
-
-}

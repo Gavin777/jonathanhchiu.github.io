@@ -13,6 +13,7 @@
 		<script src = "assets\js\script.js"></script>
 
 		<!--fonts-->
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 		<div class = "pageWrapper">
@@ -35,22 +36,24 @@
 			</div>
 			<!--landing page-->
 			<section id="top">
-				<div id="landing-wrapper">
-					<img id="landing" src="assets/images/landing.jpg">
+				<div class="landing-wrapper">
+					<img class="landing" src="assets/images/landing.jpg">
 					<a href="#content" class="smoothScroll">
 						<img class="bounce" id="down" src="assets/images/down.png">
 					</a>
 				</div>
 			</section>
 			<!--content-->
-			<div id="content-wrapper">
+			<div class="content-wrapper">
 				<section id="content">
-					<img id="logo" src="assets/images/logo.png">
+					<img class="logo" src="assets/images/logo.png">
 					<div id="row-wrapper">
-						<div id="about" class="option">
-							<p class="description">About</p>
-							<img id="beach" class="picture" src="assets/images/beach.jpg">
-						</div>
+						<a href="pages/about.html">
+							<div id="about" class="option">
+								<p class="description">About</p>
+								<img id="beach" class="picture" src="assets/images/beach.jpg">
+							</div>
+						</a>
 						<div id="works" class="option">
 							<p class="description">Works</p>
 							<img id="flowers" class="picture" src="assets/images/flowers.jpg">
@@ -63,25 +66,27 @@
 				</section>
 				<section id="foot">
 					<div class="footer">
-						<div class="footer-row-one">
-							<div class="footer-column newsletter">
-								Sign Up For Newsletter
+						<div class="footer-border">
+							<div class="footer-row-one">
+								<div class="footer-column newsletter">
+									Sign Up For Newsletter
+								</div>
+								<div class="footer-column social-media">
+									Social Media
+								</div>
+								<div class="footer-column contact">
+									Contact Us
+								</div>
+								<div class="footer-column buttons">
+									<a href="#top" class="smoothScroll">
+										<div class="up">UP
+										</div>
+									</a>
+								</div>
 							</div>
-							<div class="footer-column social-media">
-								Social Media
+							<div class="footer-row-two">
+								Design by Jonathan Chiu and Gavin Lee. Photography by Crystal Ngo.
 							</div>
-							<div class="footer-column contact">
-								Contact Us
-							</div>
-							<div class="footer-column buttons">
-								<a href="#top">
-									<div class="up">UP
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="footer-row-two">
-							Design by Jonathan Chiu and Gavin Lee. Photography by Crystal Ngo.
 						</div>
 					</div>
 				</section>

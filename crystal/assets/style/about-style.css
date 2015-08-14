@@ -1,0 +1,106 @@
+/* About Page */
+
+#content-wrapper1 {
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:420vh;
+	background:white;
+
+}
+
+#inner-content-wrapper {
+	position:absolute;
+	top:100vh;
+	left:0;
+	width:100%;
+	height:420vh;
+	background:white;
+	z-index:3;
+
+}
+
+.title {
+	position:absolute;
+	font-size:120px;
+	color:white;
+	z-index:2;
+	top:calc(50% - 160px);
+	left:calc(50% - 190px);
+}
+
+/*logo and stuff */
+
+#logo-and-stuff {
+	width:100%;
+	height:100vh;
+}
+
+#quote {
+	margin-top:-40px;
+	text-align:center;
+}
+
+#about-description {
+	width:800px;
+	text-align:center;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	color:gray;
+}
+
+/*about pictures*/
+
+#about-pictures {
+	position:relative;
+	top:20px;
+	left:20px;
+	width:calc(100% - 40px);
+	height:calc(100vh - 20px);
+	background:black;
+	overflow:hidden;
+}
+
+#abt-pictures {
+	position:absolute;
+	z-index:2;
+	opacity:0.3;
+	width:100%;
+}
+
+#about-philosophy {
+	position:relative;
+	top:20px;
+	left:20px;
+	width:calc(100% - 40px);
+	height:calc(150vh - 20px);
+	background:black;
+	overflow:hidden;
+}
+
+#abt-philosophy {
+	position:absolute;
+	z-index:2;
+	opacity:0.3;
+	width:100%;
+}
+
+#believe {
+	position:absolute;
+	color:white;
+	margin-top:20%;
+	margin-left:calc(50% - 150px);
+	font-size:36px;
+}
+#philosophy-description {
+	position:absolute;
+	width:500px;
+	color:gray;
+	z-index:2;
+	margin-left:calc(50% - 250px);
+	margin-top:25%;
+	line-height:1.5em;
+	font-size:18px;
+}

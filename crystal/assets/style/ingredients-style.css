@@ -1,0 +1,90 @@
+.title {
+	position:absolute;
+	font-size:120px;
+	color:white;
+	z-index:2;
+	top:calc(50% - 160px);
+	left:calc(50% - 300px);
+}
+
+#ing-content-wrapper {
+	height:1200px;
+}
+
+/* Ingredient Grid*/
+
+#grid-wrapper {
+	position:relative;
+}
+.row {
+	width:456px;
+	height:153px;
+	background:green;
+	position:relative;
+}
+
+.ing-square {
+	position:absolute;
+	width:150px;
+	height:150px;
+	background:red;
+}
+
+.one {
+	left:0px;
+	top:0px;
+}
+
+.two {
+	left: 153px;
+	top:0px;
+}
+
+.three {
+	left:306px;
+	top:0px;
+}
+
+#ing-desc-wrapper {
+	width:456px;
+	height:456px;
+	background:orange;
+	position:absolute;
+	left:459px;
+	font-size:100px;
+	font-weight:900;
+	color:white;
+
+}
+
+.for {
+	opacity: 0;
+	position: absolute;
+}
+
+.ing-square:hover {
+	border: 2px solid black;
+}
+
+#grid-wrapper {
+	position:absolute;
+	left:0px;
+}
+
+#ing-wrapper {
+	position:relative;
+	left:calc(50% - 456px);
+	width:912px;
+	height:456px;
+	overflow:hidden;
+}
+
+.ing-active {
+	opacity: 0.3;
+	transition: 0.5s;
+}
+
+.text-active {
+	opacity: 1 !important;
+	transition: 0.5s;
+}
