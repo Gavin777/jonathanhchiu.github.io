@@ -15,7 +15,7 @@
 	top:100vh;
 	left:0;
 	width:100%;
-	height:350vh;
+	height:420vh;
 	background:white;
 	z-index:3;
 
@@ -59,11 +59,13 @@
 /*about pictures*/
 
 #about-pictures {
-	position:absolute;
-	width:100%;
-	z-index:10;
-	background: linear-gradient(black, rgba(0, 0, 0, 0.0));
-
+	position:relative;
+	top:20px;
+	left:20px;
+	width:calc(100% - 40px);
+	height:300px;
+	background:black;
+	overflow:hidden;
 }
 
 #abt-pictures {
@@ -78,7 +80,7 @@
 	top:20px;
 	left:20px;
 	width:calc(100% - 40px);
-	height:900px;
+	height:calc(100vh - 20px);
 	background:black;
 	overflow:hidden;
 }
@@ -90,6 +92,13 @@
 	width:100%;
 }
 
+#believe {
+	position:absolute;
+	color:white;
+	margin-top:100px;
+	margin-left:calc(50% - 150px);
+	font-size:36px;
+}
 #philosophy-description {
 	font-family: latin_modern_mono10_regular;
 	position:absolute;
@@ -97,7 +106,7 @@
 	color:gray;
 	z-index:2;
 	margin-left:calc(50% - 250px);
-	margin-top:300px;
+	margin-top:175px;
 	line-height:1.5em;
 	font-size:14px;
 }
@@ -117,9 +126,7 @@
     border-radius: 50%;
     border: 1px solid #fff;
     -webkit-transition: all 0.3s;
-    opacity: 0.3;
-    z-index: 10;
-    background-color: black;
+    opacity:0.3;
 }
 
 /* Styling for the carousel next button */
@@ -139,7 +146,7 @@
 	width:4800px;
 	height:100%;
 	margin-left:0px;
-	-webkit-transition:all 0.7s;
+	-webkit-transition:all 0.3s;
 }
 
 .carousel-item {
@@ -161,20 +168,7 @@
     border-radius: 50%;
     border: 1px solid #fff;
     -webkit-transition: all 0.3s;
-    opacity: 0.3;
-    transition: 0.5s;
-    z-index: 10;
-    background-color: black;
-}
-
-#carousel-next:hover {
-	opacity: 1;
-	transition: 0.5s;
-}
-
-#carousel-prev:hover {
-	opacity: 1;
-	transition: 0.5s;
+    opacity:0.3;
 }
 
 .img-scaled {
@@ -187,9 +181,9 @@
 	position: absolute;
 	font-size: 36px;
 	color: white;
+	font-weight: 700;
     top: 50%;
     left: 50%;
-    font-family: Roboto;
     -webkit-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
    	transform: translateX(-50%) translateY(-50%);
@@ -197,9 +191,10 @@
 
 /* Styling for the author text in each quote */
 .author {
-	font-size: 14px;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: .2rem;
+	text-transform: uppercase;
 	margin-top: 10px;
 	text-align: center;
-	font-family: latin_modern_mono10_regular;
-	color:gray;
 }

@@ -34,7 +34,7 @@ a:hover {
 }
 
 #sidebar-home {
-	color:#6BCAE2;
+	color:#fff3b3;
 	transition:0.5s;
 }
 
@@ -50,7 +50,7 @@ a:hover {
 	position:fixed;
 	width:100%;
 	height:100vh;
-	background:pink;
+	background:#ffeaed;
 	color:white;
 	z-index:7;
 	top:0;
@@ -78,6 +78,7 @@ ul {
 	position:absolute;
 	top:calc(50% - 140px);
 	right:calc(50% - 115px);
+	font-family: latin_modern_mono10_regular;
 }
 
 .menu-active {
@@ -201,28 +202,32 @@ li {
 .description {
 	position:absolute;
 	z-index:2;
-	margin-top:110px;
+	margin-top:130px;
 	color:white;
-	font-size:54px;
+	font-size:36px;
 	padding: 5px;
 	transition:0.5s all;
+	font-family: latin_modern_mono10_regular;
 }
 
 .option:hover .picture {
-	opacity:0.3;
-	transform: scale(1.1);
+/*	opacity:0.3; */
+}
+
+.option:hover .description {
+	border-bottom:2px solid white;
 }
 
 .home-about-desc {
-	margin-left:calc(50% - 73px);
+	margin-left:calc(50% - 52px);
 }
 
 .home-works-desc {
-	margin-left:calc(50% - 70px);
+	margin-left:calc(50% - 52px);
 }
 
 .home-ing-desc {
-	margin-left:calc(50% - 140px);
+	margin-left:calc(50% - 109px);
 }
 /* footer */
 
@@ -254,7 +259,7 @@ li {
 	text-align:center;
 	margin-top:36px;
 	font-size:18px;
-	font-family:latin_modern_mono10_regular;
+	font-family: Roboto;
 
 }
 

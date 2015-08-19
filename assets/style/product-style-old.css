@@ -41,7 +41,7 @@
 .square {
 	width:250px;
 	height: 250px;
-	background:black;
+	background:red;
 	margin-right:3px;
 	position:absolute;
 	transition:0.5s;
@@ -56,7 +56,7 @@
 #product-wrapper {
 	width:1009px;
 	height:1009px;
-	background:white;
+	background:green;
 	margin-left:calc(50% - 504.5px);
 	margin-top:48px;
 }
@@ -85,35 +85,4 @@
 .selected {
 	opacity:1;
 	transition:0.7s;
-}
-
-.prod-text {
-	color:gray;
-	font-family: latin_modern_mono10_regular;
-	margin-left: 210px;
-}
-
-#prod-margin1 {
-	float: left;	
-	width: 167px;
-}
-#prod-margin2 {
-	float: left;	
-	width: 160px;
-}
-#prod-margin3 {
-	float: left;	
-	width: 160px;
-}
-#prod-margin4 {
-	float: left;	
-	width: 165px;
-}
-#prod-margin5 {
-	float: left;	
-	width: 165px;
-}
-#prod-margin6 {
-	float: left;	
-	width: 160px;
 }

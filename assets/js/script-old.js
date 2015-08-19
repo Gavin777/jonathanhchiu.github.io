@@ -53,26 +53,6 @@ $(document).ready(function(){
 		$(".prod-icon").removeClass("selected");
 	})
 
-// for about carousel
-  $("#carousel-next").click(function() {
-    var count = (parseInt($('#carousel').css('margin-left').replace("px", "")));
-    if (count <= -3840) {
-      $("#carousel").css("margin-left", 0);
-      return false;
-    } else {
-    $("#carousel").css("margin-left", (count - 960).toString() + "px");
-	}
-  })
-
-  $("#carousel-prev").click(function() {
-    var count2 = (parseInt($('#carousel').css('margin-left').replace("px", "")));
-    if (count2 >= 0) {
-      $("#carousel").css("margin-left", -3840);
-      return false;
-    } else {
-    $("#carousel").css("margin-left", (count2 + 960).toString() + "px");
-	}
-  })
 
 		
 /*	
@@ -109,4 +89,3 @@ $(".landing").css("opacity", light);
 	});
 */
 });
-
