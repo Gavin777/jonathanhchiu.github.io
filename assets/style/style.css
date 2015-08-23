@@ -164,16 +164,19 @@ li {
 
 #row-wrapper {
 	position:relative;
-	width:calc(100% - 40px);
+	width:1131px;
 	height:300px; 
 	background:white;
 	margin-left:20px;
 	overflow:hidden;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:50px;
 }
 
 .option {
 	position:absolute;
-	width:33%;
+	width:375px;
 	height:300px;
 	overflow:hidden;
 	background:black;
@@ -181,22 +184,20 @@ li {
 
 .picture {
 	position:absolute;
-	width:100%;
+	width:400px;
 	transition:0.5s;
 }
 
 #works {
-	margin-left:33.5%;
+	margin-left:378px;
 }
 
 #ingredients {
-	margin-left:67%;
+	margin-left:756px;
 }
 
 #flowers {
-	margin-top:-10px;
-	width:110%;
-	margin-left:-25px;
+	width:500px;
 }
 
 .description {
@@ -236,7 +237,7 @@ li {
 	height:250px;
 	width: 100%;
 	bottom:0px;
-	background:gray;
+	background:#A99297;
 
 }
 
@@ -278,10 +279,10 @@ li {
 }
 .footer-border {
 	position:absolute;
-	width:calc(100% - 40px);
+	width:1131px;
 	height: calc(100% - 20px);
 	top:20px;
-	left:20px;
+	left:calc(50% - 565.5px);
 	border-top: 2px solid white;
 	border-left: 2px solid white;
 	border-right: 2px solid white;
@@ -289,10 +290,10 @@ li {
 
 .footer-row-two {
 	color:white;
-	font-size:12px;
+	font-size:8px;
 	position:absolute;
 	bottom:12px;
-	left:40px;
-	font-family: latin_modern_mono10_regular;
+	left:calc(50% - 125px);
+	font-family: Roboto;
 }
 

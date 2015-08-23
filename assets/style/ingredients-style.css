@@ -29,8 +29,46 @@
 	height:150px;
 	background:gray;
 	transition:0.5s;
+	opacity:0.6;
+	overflow:hidden;
 }
 
+.gridpic {
+	width:250px;
+}
+
+#oil {
+	margin-left:-55px;
+	margin-top:-5px;
+}
+
+#butter {
+	margin-left:-55px;
+
+}
+
+#herb {
+	margin-left:-50px;
+	margin-top:-15px;
+}
+
+#clay {
+	margin-left:-35px;
+	margin-top:-5px;
+}
+
+#pigment {
+	margin-left: -53px;
+	margin-top:-5px;
+}
+
+#essentialoil {
+	margin-left:-45px;
+}
+
+#seasalt {
+	margin-left:-50px;
+}
 .one {
 	left:0px;
 	top:0px;
@@ -85,7 +123,7 @@
 }
 
 .ing-square:hover {
-	opacity: 0.7;
+	opacity: 0.8;
 }
 
 #grid-wrapper {
@@ -102,7 +140,7 @@
 }
 
 .ing-active {
-	opacity:0.3;
+	opacity:1;
 }
 
 .text-active {
