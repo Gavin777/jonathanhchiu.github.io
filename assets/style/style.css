@@ -14,7 +14,7 @@ body {
 	font-family: Roboto;
 }
 
-/* loading page */
+/* loading page 
 .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
 .se-pre-con {
@@ -26,6 +26,7 @@ body {
 	z-index: 9999;
 	background: url(../images/pink.gif) center no-repeat #fff;
 }
+*/
 /*The Navigation and Menu */
 .menu {
 	position:fixed;
@@ -173,14 +174,14 @@ li {
 
 .logo {
 	opacity: 0;
-	transition: 5s;
+	transition: 1s;
 	width:500px;
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
 	padding-top:125px;
 	margin-top:0px;
-	margin-bottom:30px;
+	margin-bottom:48px;
 }
 
 /* navigation row */

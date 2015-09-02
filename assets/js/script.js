@@ -1,3 +1,8 @@
+/*
+$(window).load(function() {
+		$(".se-pre-con").fadeOut("slow");;
+	});
+*/
 $(document).ready(function(){
 
 	$(window).scroll(function(){
@@ -8,7 +13,7 @@ $(document).ready(function(){
 	  	return false;
 	  }
 		});
-
+	
 	$(window).scroll(function(){
 		if($(window).scrollTop() > 1200  && $(".about-section").hasClass("show") == false){
 		    $(".about-section").addClass("show");
@@ -17,6 +22,7 @@ $(document).ready(function(){
 	  	return false;
 	  }
 		});
+
 	$(".menu").click(function(){
 		
 		$(".menu-container").addClass("menu-active");
@@ -37,52 +43,29 @@ $(document).ready(function(){
 	});
 
 // for ingredients
-	$(".ing-square").click(function () {
+	$(".ing-square").click(function(){
 		var name = $(this).attr('id');
 		var desc = ".for[id='" + name + "-text']";
 		$(".for").removeClass("text-active");
 		$(".ing-square").removeClass("ing-active");
 		$("#" + name).addClass("ing-active");
 		$(desc).addClass("text-active");
-
-	})
+	});
 
 // for products
-	$(".prod-icon").click(function () {
+	$(".prod-icon").click(function(){
 		var prodname = $(this).attr('id');
 		var proddesc = ".square[id='" + prodname + "']";
 		$(".square").addClass("darken");
 		$(proddesc).removeClass("darken");
 		$(".prod-icon").removeClass("selected");
 		$("#" + prodname).addClass("selected");
+	});
 
-	})
-
-	$("#clear").click(function() {
+	$("#clear").click(function(){
 		$(".square").removeClass("darken");
 		$(".prod-icon").removeClass("selected");
-	})
-
-// for about carousel
-  $("#carousel-next").click(function() {
-    var count = (parseInt($('#carousel').css('margin-left').replace("px", "")));
-    if (count <= -3648) {
-      $("#carousel").css("margin-left", 0);
-      return false;
-    } else {
-    $("#carousel").css("margin-left", (count - 912).toString() + "px");
-	}
-  })
-
-  $("#carousel-prev").click(function() {
-    var count2 = (parseInt($('#carousel').css('margin-left').replace("px", "")));
-    if (count2 >= 0) {
-      $("#carousel").css("margin-left", -3648);
-      return false;
-    } else {
-    $("#carousel").css("margin-left", (count2 + 912).toString() + "px");
-	}
-  })
+	});
 
 
 $(window).scroll(function(){
@@ -97,8 +80,11 @@ $(window).scroll(function(){
 
 	$(".landing").css("opacity", light);
 	}
-
+	else {
+		return false;
+	}
 });
+
 
 var nav_container = $("#icon-wrapper");
 var nav = $("nav");
