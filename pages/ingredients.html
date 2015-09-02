@@ -9,6 +9,7 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="../assets/js/jquery.waypoints.js"></script>
 	<script type="text/javascript" src="../assets/js/smoothscroll.js"></script>
+	<script src = "..\assets\js\loading.js"></script>
 	<script src = "..\assets\js\script.js"></script>
 
 	<!--fonts-->
@@ -16,6 +17,7 @@
 	<title>Ingredients</title>
 </head>
 <body>
+	<div class="se-pre-con"></div>
 	<div class="pageWrapper">
 		<!--navigation-->
 		<div class="navigation">
@@ -34,7 +36,7 @@
 						<li class="sidebar-item">About</li>
 					</a>
 					<a href="products.html">
-						<li class="sidebar-item">Works</li>
+						<li class="sidebar-item">Crafts</li>
 					</a>
 					<a href="ingredients.html">
 						<li class="sidebar-item">Ingredients</li>
@@ -44,11 +46,19 @@
 		</div>
 		<!--landing page-->
 		<div class="landing-wrapper">
-			<img class="landing" src="../assets/images/kaws.jpg">
+			<img class="landing" src="../assets/images/outside.jpg">
 			<p class="title">Ingredients</p>
+			<a href="#content" class="smoothScroll">
+				<img class="bounce" id="down" src="../assets/images/down.png">
+			</a>
 		</div>
 		<!--content-->
+
 		<div class="content-wrapper" id="ing-content-wrapper">
+			<div id = "scroll-point-ing"> 
+				<section id = "content">
+				</section>
+			</div>
 			<img class="logo" src="../assets/images/logo.png">
 			<div id="ing-wrapper">
 				<div id="grid-wrapper">
@@ -78,12 +88,14 @@
 						<div class="ing-square one" id="6">
 							<img id="seasalt" class="gridpic" src="../assets/images/seasalt.JPG">
 						</div>
-						<div class="ing-square two" id="7"></div>
+						<div class="ing-square two" id="7">
+							<img id="vitae" class="gridpic" src="../assets/images/vitae.JPG">
+						</div>
 						<div class="ing-square three" id="8"></div>
 					</div>
 				</div>
 				<div id="ing-desc-wrapper">
-					<div id="intro-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+					<div id="intro-desc">All of our soaps are birthed from handmade wooden molds. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
 					<div class = "for" id = "0-text">
 						<div class="ing-grid-text">
 							<div class="ing-grid-title">Oils 
@@ -150,25 +162,30 @@
 					</div>
 					<div class = "for" id = "8-text">
 						<div class="ing-grid-text">
-							<div class="ing-grid-title">Sodium Hydroxide
+							<div class="ing-grid-title">Exotic Oils
 							</div>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> </section>
 			<!--foot-->
 			<div class="footer">
 				<div class="footer-border">
 					<div class="footer-row-one">
 						<div class="footer-column newsletter">
 							Sign Up For Newsletter
+								<input type="text" id="email" placeholder="Your Email">
+							<div class="submit">Go</div>
 						</div>
 						<div class="footer-column social-media">
-							Social Media
+							Social Media<br><br>
+							<img class="social" src="../assets/images/insta.png">
+							<img class="social" src="../assets/images/pinterest.png">
 						</div>
 						<div class="footer-column contact">
-							Contact Us
+							Contact Us<br><br>
+							<div id="mail">email@homerootcreations.com</div>
 						</div>
 						<div class="footer-column buttons">
 							<a href="#top">
@@ -184,7 +201,7 @@
 					</div>
 				</div>
 				<div class="footer-row-two">
-					Design by Jonathan Chiu and Gavin Lee. Photography by Crystal Ngo.
+					Design by Jonathan Chiu and Gavin Lee. Photography by Crystal Ngo. Calligraphy by Vivian Ngo.
 				</div>
 			</div>
 		</div>

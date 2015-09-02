@@ -69,6 +69,10 @@
 #seasalt {
 	margin-left:-50px;
 }
+
+#vitae {
+	margin-left:-50px;
+}
 .one {
 	left:0px;
 	top:0px;
@@ -93,6 +97,7 @@
 	font-size:12px;
 	color:gray;
 	font-family: latin_modern_mono10_regular;
+	line-height:1.5em;
 
 }
 
@@ -117,9 +122,11 @@
 }
 
 .ing-grid-title {
-	font-size:18px;
+	font-size:24px;
 	text-align:center;
 	margin-bottom:24px;
+	font-family:Roboto;
+	color:pink;
 }
 
 .ing-square:hover {

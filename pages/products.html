@@ -11,9 +11,11 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="../assets/js/jquery.waypoints.js"></script>
 	<script type="text/javascript" src="../assets/js/smoothscroll.js"></script>
+	<script src = "..\assets\js\loading.js"></script>
 	<script src = "..\assets\js\script.js"></script>
 </head>
 <body>
+	<div class="se-pre-con"></div>
 	<div class="pageWrapper">
 		<!--navigation-->
 		<div class="navigation">
@@ -32,7 +34,7 @@
 						<li class="sidebar-item">About</li>
 					</a>
 					<a href="products.html">
-						<li class="sidebar-item">Works</li>
+						<li class="sidebar-item">Crafts</li>
 					</a>
 					<a href="ingredients.html">
 						<li class="sidebar-item">Ingredients</li>
@@ -42,44 +44,67 @@
 		</div>
 				<!--landing page-->
 		<div class="landing-wrapper">
-			<img class="landing" src="../assets/images/camo.jpg">
+			<img class="landing" id="root" src="../assets/images/landing.JPG">
 			<p class="title">Crafts</p>
+			<a href="#content" class="smoothScroll">
+				<img class="bounce" id="down" src="../assets/images/down.png">
+			</a>
 		</div>
 		<!--Content-->
 		<div class="content-wrapper" id="product-content-wrapper">
+			<div id = "scroll-point-works"> 
+				<section id = "content">
+				</section>
+			</div>
 			<img class="logo" src="../assets/images/logo.png">
 			<p id="shop">Shop Coming Soon</p>
+			<p id="shop-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+			<div class="line" id="prod-line"></div>
 			<div id="icon-wrapper">
-				<img class="prod-icon" id = "bar" src="../assets/images/soap.png">
-				<img class="prod-icon" id = "salt" src="../assets/images/salt.png">
-				<img class="prod-icon" id = "bubble" src="../assets/images/scrub.png">
-				<img class="prod-icon" id = "squeeze" src="../assets/images/butter.png">
-				<img class="prod-icon" id = "candle" src="../assets/images/candle.png">
-		 		<img class="prod-icon" id="clear" src="../assets/images/x.png">
-			</div>
-			<div class = "prod-text"> 
-				<div id = "prod-margin1"> Soap </div>
-				<div id = "prod-margin2"> Salt </div>
-				<div id = "prod-margin3"> Scrub </div>
-				<div id = "prod-margin4"> Butter </div>
-				<div id = "prod-margin5"> Candle </div>
-				<div id = "prod-margin6"> Clear </div>
+				<nav id="prod-icon-wrapper">
+					<img class="prod-icon" id = "bar" src="../assets/images/soap.png">
+					<img class="prod-icon" id = "salt" src="../assets/images/salt.png">
+					<img class="prod-icon" id = "bubble" src="../assets/images/scrub.png">
+					<img class="prod-icon" id = "squeeze" src="../assets/images/butter.png">
+					<img class="prod-icon" id = "candle" src="../assets/images/candle.png">
+			 		<img class="prod-icon" id="clear" src="../assets/images/x.png">
+			 		<div class = "nav-left"> </div>
+			 		<div class = "nav-right"> </div>
+			 	</nav>
 			</div>
 			<div id="product-wrapper">
 				<div class="product-row">
-					<div class="square position-one" id = "bar"></div>
-					<div class="square position-two" id = "bar"></div>
-					<div class="square position-three" id = "bar"></div>
-					<div class="square position-four" id = "bar"></div>
+					<div class="square position-one" id = "bar">
+						<img class="first" src="../assets/images/box.JPG">
+					</div>
+					<div class="square position-two" id = "bar">
+						<img class="first" src="../assets/images/citrus.JPG">
+					</div>
+					<div class="square position-three" id = "bar">
+						<img class="first" src="../assets/images/coconut.JPG">
+					</div>
+					<div class="square position-four" id = "bar">
+						<img class="first" src="../assets/images/cupcake.JPG">
+					</div>
 				</div>
 				<div class="product-row">
-					<div class="square position-one" id = "salt"></div>
-					<div class="square position-two" id = "salt"></div>
-					<div class="square position-three" id = "salt"></div>
-					<div class="square position-four" id = "salt"></div>	
+					<div class="square position-one" id = "salt">
+						<img class="first" src="../assets/images/goat.JPG">
+					</div>
+					<div class="square position-two" id = "salt">
+						<img class="first" src="../assets/images/lav.JPG">
+					</div>
+					<div class="square position-three" id = "salt">
+						<img class="first" src="../assets/images/sal.JPG">
+					</div>
+					<div class="square position-four" id = "salt">
+						<img class="first" src="../assets/images/bodybutter.JPG">
+					</div>	
 				</div>
 				<div class="product-row">
-					<div class="square position-one" id = "bubble"></div>
+					<div class="square position-one" id = "bubble">
+						
+					</div>
 					<div class="square position-two" id = "bubble"></div>
 					<div class="square position-three" id = "squeeze"></div>
 					<div class="square position-four" id = "squeeze"></div>
@@ -94,33 +119,38 @@
 			</div>
 			<!--footer-->
 			<div class="footer">
-						<div class="footer-border">
-							<div class="footer-row-one">
-								<div class="footer-column newsletter">
-									Sign Up For Newsletter
-								</div>
-								<div class="footer-column social-media">
-									Social Media
-								</div>
-								<div class="footer-column contact">
-									Contact Us
-								</div>
-								<div class="footer-column buttons">
-									<a href="#top" class="smoothScroll">
-										<div class="up">UP
-										</div>
-									</a>
-									<a href="../index.html">
-										<div class="home">
-											<img class="home-logo" src="../assets/images/house.png">
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="footer-row-two">
-								Design by Jonathan Chiu and Gavin Lee. Photography by Crystal Ngo.
-							</div>
+				<div class="footer-border">
+					<div class="footer-row-one">
+						<div class="footer-column newsletter">
+							Sign Up For Newsletter
+								<input type="text" id="email" placeholder="Your Email">
+							<div class="submit">Go</div>
 						</div>
+						<div class="footer-column social-media">
+							Social Media<br><br>
+							<img class="social" src="../assets/images/insta.png">
+							<img class="social" src="../assets/images/pinterest.png">
+						</div>
+						<div class="footer-column contact">
+							Contact Us<br><br>
+							<div id="mail">email@homerootcreations.com</div>
+						</div>
+						<div class="footer-column buttons">
+							<a href="#top">
+								<div class="up">UP
+								</div>
+							</a>
+							<a href="../index.html">
+								<div class="home">
+									<img class="home-logo" src="../assets/images/house.png">
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer-row-two">
+					Design by Jonathan Chiu and Gavin Lee. Photography by Crystal Ngo. Calligraphy by Vivian Ngo.
+				</div>
 			</div>
 		</div>
 	</div>

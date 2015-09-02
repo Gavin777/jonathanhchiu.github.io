@@ -5,9 +5,8 @@
 	left:0;
 	top:0;
 	width:100%;
-	height:375vh;
+	height:2000px;
 	background:white;
-
 }
 
 #inner-content-wrapper {
@@ -15,10 +14,9 @@
 	top:100vh;
 	left:0;
 	width:100%;
-	height:350vh;
+	height:2000px;
 	background:white;
 	z-index:3;
-
 }
 
 .title {
@@ -34,172 +32,62 @@
 
 #logo-and-stuff {
 	width:100%;
-	height:100vh;
-	margin-bottom:150px;
 }
 
-#quote {
-	font-family: latin_modern_mono10_regular;
-	margin-top:-40px;
-	text-align:center;
-}
+/* List */
 
-#about-description {
-	font-family: latin_modern_mono10_regular;
-	width:500px;
-	text-align:center;
-	display:block;
+#list-summary {
+	width:200px;
 	margin-left:auto;
 	margin-right:auto;
+	margin-top:-24px;
+	margin-bottom: 600px;
+}
+.summary {
+	line-height: 1.5em;
+    font-size: 12px;
 	color:gray;
-	font-size:14px;
-	line-height:1.5em;
+	text-align:center;
+    font-family: latin_modern_mono10_regular;
 }
 
-/*about pictures*/
-
-#about-pictures {
-	position:absolute;
-	width:100%;
-	z-index:10;
-	background: linear-gradient(black, rgba(0, 0, 0, 0.0));
-
-}
-
-#abt-pictures {
-	position:absolute;
-	z-index:2;
-	opacity:0.3;
-	width:100%;
-}
-
-#about-philosophy {
-	position:relative;
-	top:20px;
-	left:20px;
-	width:calc(100% - 40px);
-	height:900px;
-	background:black;
-	overflow:hidden;
-}
-
-#abt-philosophy {
-	position:absolute;
-	z-index:2;
-	opacity:0.3;
-	width:100%;
-}
-
-#philosophy-description {
-	font-family: latin_modern_mono10_regular;
-	position:absolute;
-	width:500px;
+#who-we-are {
+	text-align:center;
 	color:gray;
-	z-index:2;
-	margin-left:calc(50% - 250px);
-	margin-top:300px;
-	line-height:1.5em;
-	font-size:14px;
+	font-size: 24px;
+	margin-top:-50px;
 }
 
-/* carousel */ 
-
-/* Styling for the carousel previous button */
-#carousel-prev {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    left: 60px;
-    top: 50%;
-    margin-top: -30px;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    -webkit-transition: all 0.3s;
-    opacity: 0.3;
-    z-index: 10;
-    background-color: black;
+#about-line2 {
+	margin-top:24px;
+	margin-bottom:18px;
+	width:75px;
 }
 
-/* Styling for the carousel next button */
+/* About Paragraph */
+.column {
+    width: 300px;
+    float: left;
+    color: gray;
+    line-height: 1.5em;
+    font-size: 12px;
+    margin-left: 24px;
+    font-family: latin_modern_mono10_regular;
+}
 
-.carousel-container {
-	width:960px;
-	display:block;
+#motto {
+	font-size:24px;
+	color:black;
+}
+.about-section {
+	width: 972px;
+	height:400px;
+	opacity:0;  
+	transition:3s; 
 	margin-left: auto;
-	margin-right:auto;
-	height:300px;
-	overflow:hidden;
-	position:relative;
-
+    margin-right: auto;
 }
 
-#carousel {
-	width:4800px;
-	height:100%;
-	margin-left:0px;
-	-webkit-transition:all 0.7s;
-}
-
-.carousel-item {
-	width:960px;
-	position:relative;
-	height:100%;
-	float:left;
-}
-
-#carousel-next {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    right: 60px;
-    top: 50%;
-    margin-top: -30px;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    -webkit-transition: all 0.3s;
-    opacity: 0.3;
-    transition: 0.5s;
-    z-index: 10;
-    background-color: black;
-}
-
-#carousel-next:hover {
-	opacity: 1;
-	transition: 0.5s;
-}
-
-#carousel-prev:hover {
-	opacity: 1;
-	transition: 0.5s;
-}
-
-.img-scaled {
-	width: 100%;
-	height: 100%;
-}
-
-/* Styling for the quotes and text in each section */
-.quote, .text {
-	position: absolute;
-	font-size: 36px;
-	color: white;
-    top: 50%;
-    left: 50%;
-    font-family: Roboto;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-   	transform: translateX(-50%) translateY(-50%);
-}
-
-/* Styling for the author text in each quote */
-.author {
-	font-size: 14px;
-	margin-top: 10px;
-	text-align: center;
-	font-family: latin_modern_mono10_regular;
-	color:gray;
+#end {
+	margin-top:78px;
 }

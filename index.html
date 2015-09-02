@@ -10,12 +10,15 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="assets/js/jquery.waypoints.js"></script>
 		<script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+		<script src = "assets\js\loading.js"></script>
 		<script src = "assets\js\script.js"></script>
+		
 
 		<!--fonts-->
 		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
+		<div class="se-pre-con"></div>
 		<div class = "pageWrapper">
 		<!--navigation-->
 		<div class="navigation">
@@ -53,54 +56,67 @@
 			</section>
 			<!--content-->
 			<div class="content-wrapper">
-				<section id="content">
+				<div id = "scroll-point-index"> 
+					<section id = "content">
+					</section>
+				</div>
 					<img class="logo" src="assets/images/logo.png">
-					<div id="row-wrapper">
-						<a href="pages/about.html">
-							<div id="about" class="option">
-								<p class="description home-about-desc">About</p>
-								<img id="beach" class="picture" src="assets/images/beach.JPG">
-							</div>
-						</a>
-						<a href="pages/products.html">
-							<div id="works" class="option">
-								<p class="description home-works-desc">Crafts</p>
-								<img id="flowers" class="picture" src="assets/images/landing.JPG">
-							</div>
-						</a>
-						<a href="pages/ingredients.html">
-							<div id="ingredients" class="option">
-								<p class="description home-ing-desc">Ingredients</p>
-								<img id="palm" class="picture" src="assets/images/palm.JPG">
-							</div>
-						</a>
-					</div>
-				</section>
+					<div class="line"></div>
+				<div id="row-wrapper">
+					<a href="pages/about.html">
+						<div id="about" class="option">
+							<p class="description home-about-desc">About</p>
+							<img id="beach" class="picture" src="assets/images/flowers.JPG">
+						</div>
+					</a>
+					<a href="pages/products.html">
+						<div id="works" class="option">
+							<p class="description home-works-desc">Crafts</p>
+							<img id="flowers" class="picture" src="assets/images/hand.JPG">
+						</div>
+					</a>
+					<a href="pages/ingredients.html">
+						<div id="ingredients" class="option">
+							<p class="description home-ing-desc">Ingredients</p>
+							<img id="palm" class="picture" src="assets/images/spoon.JPG">
+						</div>
+					</a>
+				</div>
 				<section id="foot">
 					<div class="footer">
-						<div class="footer-border">
-							<div class="footer-row-one">
-								<div class="footer-column newsletter">
-									Sign Up For Newsletter
+				<div class="footer-border">
+					<div class="footer-row-one">
+						<div class="footer-column newsletter">
+							Sign Up For Newsletter
+								<input type="text" id="email" placeholder="Your Email">
+							<div class="submit">Go</div>
+						</div>
+						<div class="footer-column social-media">
+							Social Media<br><br>
+							<img class="social" src="assets/images/insta.png">
+							<img class="social" src="assets/images/pinterest.png">
+						</div>
+						<div class="footer-column contact">
+							Contact Us<br><br>
+							<div id="mail">email@homerootcreations.com</div>
+						</div>
+						<div class="footer-column buttons">
+							<a href="#top">
+								<div class="up">UP
 								</div>
-								<div class="footer-column social-media">
-									Social Media
+							</a>
+							<a href="../index.html">
+								<div class="home">
+									<img class="home-logo" src="assets/images/house.png">
 								</div>
-								<div class="footer-column contact">
-									Contact Us
-								</div>
-								<div class="footer-column buttons">
-									<a href="#top" class="smoothScroll">
-										<div class="up">UP
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="footer-row-two">
-								Design by Jonathan Chiu and Gavin Lee. Photography by Crystal Ngo.
-							</div>
+							</a>
 						</div>
 					</div>
+				</div>
+				<div class="footer-row-two">
+					Design by Jonathan Chiu and Gavin Lee. Photography by Crystal Ngo. Calligraphy by Vivian Ngo.
+				</div>
+			</div>
 				</section>
 			</div>
 		</div>
