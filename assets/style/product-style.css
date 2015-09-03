@@ -62,6 +62,7 @@
 	z-index:2;
 	top:calc(50% - 160px);
 	left:calc(50% - 190px);
+	display:none;
 }
 
 .square {
