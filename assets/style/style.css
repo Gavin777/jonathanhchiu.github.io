@@ -110,6 +110,9 @@ a:hover {
 	z-index:7;
 	top:0;
 	right:0;
+	-webkit-transform: translateX(400px);
+	-moz-transform: translateX(400px);
+	-o-transform: translateX(400px);
 	transform: translateX(400px);
 	transition:0.5s;
 
@@ -138,6 +141,9 @@ ul {
 }
 
 .menu-active {
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-o-transform: translateX(0px);
 	transform: translateX(0px);
 }
 
