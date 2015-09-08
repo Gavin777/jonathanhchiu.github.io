@@ -27,7 +27,31 @@ body {
 	background: url(../images/pink.gif) center no-repeat #fff;
 }
 */
+
 /*The Navigation and Menu */
+
+/* landing page */
+.landing-desc {
+    color: white;
+    z-index: 100;
+    width: 400px;
+    position: absolute;
+    line-height: 1.5em;
+    font-size: 12px;
+    font-family: latin_modern_mono10_regular;
+    top:calc(50% + 10px);
+    right: calc(50% - 200px);
+    text-align:center;
+
+}
+
+.icon {
+	width: 36px;
+    position: absolute;
+    z-index: 5;
+    right: 6px;
+    top:60px;
+}
 .menu-div {
 	position:fixed;
 	width:48px;
@@ -146,11 +170,21 @@ li {
 	z-index:1;
 }
 
+.title {
+	position:absolute;
+	font-size:120px;
+	color:white;
+	z-index:2;
+	top:calc(50% - 130px);
+	left:calc(50% - 431px);
+	
+}
+
 #down {
 	position:absolute;
 	width:36px;
 	bottom: 12px;
-	right:6px;
+	right: 6px;
 	z-index:5;
 }
 

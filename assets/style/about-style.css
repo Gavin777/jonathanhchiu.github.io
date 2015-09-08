@@ -24,9 +24,9 @@
 	font-size:120px;
 	color:white;
 	z-index:2;
-	top:calc(50% - 160px);
+	top:calc(50% - 250px);
 	left:calc(50% - 190px);
-	display:none;
+	
 }
 
 /*logo and stuff */
