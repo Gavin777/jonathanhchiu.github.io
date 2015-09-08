@@ -98,14 +98,14 @@
 	margin-bottom: 70px;
 }
 
-@media (max-width: 640px) {
+@media (min-height:900px) {
 	.landing-wrapper {
 		display: none;
 	}
 
 	.logo {
 		opacity: 1;
-		width: 100%;
+		width:70%;
 		padding-top: 125px;
 	}
 

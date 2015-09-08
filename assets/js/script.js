@@ -92,7 +92,7 @@ $(window).scroll(function(){
 
 var nav_container = $("#icon-wrapper");
 var ingredients = $("#ing-desc-wrapper");
-var w = window.innerWidth;
+var w = window.innerHeight;
 var nav = $("nav");
 	
 nav_container.waypoint({
@@ -107,7 +107,7 @@ nav_container.waypoint({
 
   });
 
-if (w < 540) {
+if (w > 900) {
 	ingredients.waypoint({
 	    handler: function(direction) {
 	      	nav.toggleClass('sticky', direction=='down');
