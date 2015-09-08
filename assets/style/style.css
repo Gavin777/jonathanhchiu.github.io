@@ -27,9 +27,6 @@ body {
 	background: url(../images/pink.gif) center no-repeat #fff;
 }
 */
-
-/*The Navigation and Menu */
-
 /* landing page */
 .landing-desc {
     color: white;
@@ -58,6 +55,8 @@ body {
     right: 6px;
     top:60px;
 }
+
+/*The Navigation and Menu */
 .menu-div {
 	position:fixed;
 	width:48px;
@@ -87,7 +86,7 @@ a:hover {
 }
 
 #sidebar-home {
-	color:#fff3b3;
+	color:black;
 	transition:0.5s;
 }
 
@@ -171,26 +170,15 @@ li {
 }
 
 .landing {
-	position:absolute;
 	width:100%;
 	z-index:1;
-}
-
-.title {
-	position:absolute;
-	font-size:120px;
-	color:white;
-	z-index:2;
-	top:calc(50% - 130px);
-	left:calc(50% - 431px);
-	
 }
 
 #down {
 	position:absolute;
 	width:36px;
 	bottom: 12px;
-	right: 6px;
+	right:6px;
 	z-index:5;
 }
 
@@ -222,7 +210,7 @@ li {
 	top:100vh;
 	left:0;
 	width:100%;
-	height:1200px;
+	height:1050px;
 	background:white;
 	z-index:3;
 
@@ -231,7 +219,7 @@ li {
 .logo {
 	opacity: 0;
 	transition: 1s;
-	width:500px;
+	width:38%;
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
@@ -244,10 +232,9 @@ li {
 
 #row-wrapper {
 	position:relative;
-	width:1131px;
+	width: 80%;
 	height:300px; 
 	background:white;
-	margin-left:20px;
 	overflow:hidden;
 	margin-left:auto;
 	margin-right:auto;
@@ -256,25 +243,26 @@ li {
 
 .option {
 	position:absolute;
-	width:375px;
+	width: 33%;
 	height:300px;
+	margin: auto;
 	overflow:hidden;
 	background:white;
 }
 
 .picture {
 	position:absolute;
-	width:400px;
+	width:420px;
 	opacity:0.9;
 	transition:0.5s;
 }
 
 #works {
-	margin-left:378px;
+	margin-left: 33.5%;
 }
 
 #ingredients {
-	margin-left:756px;
+	margin-left: 67%;
 }
 
 #flowers {
@@ -283,12 +271,10 @@ li {
 
 #palm {
 	width:454px;
-	margin-left:-40px;
 }
 
 #beach {
-	width:420px;
-	margin-left:-32px;
+	width:454px;
 	margin-top:-12px;
 }
 
@@ -299,16 +285,18 @@ li {
 	color:white;
 	font-size:36px;
 	padding: 5px;
-	transition:0.5s all;
+	transition:1s all;
 	font-family: latin_modern_mono10_regular;
 }
 
 .option:hover .picture {
-/*	opacity:0.3; */
+	opacity:0.5; 
 }
 
 .option:hover .description {
+	-webkit-text-stroke: 1px black;
 	border-bottom:2px solid white;
+	transition: 1s all;
 }
 
 .home-about-desc {
@@ -346,7 +334,6 @@ li {
 }
 
 .footer-column {
-	position:absolute;
 	display:inline-block;
 	width:25%;
 	color:white;
@@ -387,8 +374,7 @@ li {
 }
 
 .footer-row-one {
-	position:relative;
-	width: 1100px;
+	width: 95%;
     height: 200px;
     margin-left: auto;
     margin-right: auto;
@@ -421,13 +407,6 @@ li {
     display: inline-block;
     background: pink;
 }
-.social-media {
-	left:275px;
-}
-
-.contact {
-	left:550px;
-}
 
 .buttons {
 	left:825px;
@@ -437,6 +416,10 @@ li {
 	font-family:latin_modern_mono10_regular;
 	margin-top: 18px;
     font-size: 18px;
+}
+
+.spacing {
+	height: 200px;
 }
 
 /* for scrolling */
@@ -470,4 +453,71 @@ li {
 	margin-left:auto;
 	margin-right:auto;
 	background:gray;
+}
+
+.pageWrapper {
+	max-width: 1080px;
+margin: 0 auto !important;
+float: none !important;
+
+}
+
+@media (max-width: 540px) {
+	.landing-wrapper {
+		display: none;
+	}
+
+	.logo {
+		opacity: 1;
+		width: 100%;
+		padding-top: 25px;
+	}
+
+	#inner-content-wrapper{
+		position: absolute;
+		top: 0px;
+	}
+
+	.content-wrapper {
+		position: absolute;
+		top: 0px;
+	}
+
+	.option {
+		width: 100%;
+	}
+
+	#works {
+		margin-left: 0%;
+		position: relative;
+		top: 330px;
+	}
+
+	#ingredients {
+		margin-left: 0%;
+		position: relative;
+		top: 360px;
+	}
+
+	#row-wrapper {
+		height: 1050px;
+		overflow: visible;
+	}
+
+	.content-wrapper {
+		height: 1400px;
+	}
+
+	.footer {
+		height: 0px;
+		position: absolute;
+		bottom: 10px;
+		background: white;
+	}
+	.footer-border{
+		display: none;
+	}
+	.footer-row-two {
+		color: black;
+	}
 }

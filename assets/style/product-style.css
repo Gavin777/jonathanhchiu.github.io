@@ -1,17 +1,10 @@
 #product-content-wrapper {
-	height:2500px;
+	height: auto;
 	overflow:hidden;
 }
 
 #root {
-	margin-top:-200px;
-}
-#shop {
-	text-align:center;
-	margin-top:-48px;
-	color:gray;
-	font-family: latin_modern_mono10_regular;
-	display:none;
+	margin-top: -15%;
 }
 
 .prod-icon {
@@ -20,7 +13,7 @@
 	opacity:0.3;
 	transition:0.7s;
 	z-index: 16;
-	margin-top:16px;
+	margin-top:6px;
 	margin-bottom:10px;
 }
 
@@ -36,7 +29,6 @@
 	margin-top:50px;
 	margin-bottom:6px;
 }
-
 
 #shop-desc {
 	width:400px;
@@ -62,12 +54,12 @@
 	z-index:2;
 	top:calc(50% - 250px);
 	left:calc(50% - 190px);
-	
 }
 
 .square {
-	width:250px;
-	height: 250px;
+	width:24.5%;
+	height: 0px;
+	padding-bottom: 24.5%;
 	background:black;
 	margin-right:3px;
 	position:absolute;
@@ -76,33 +68,37 @@
 }
 
 .product-row {
-	width:1009px;
-	height:253px;
+	width: 100%;
+	height: 0px;
+	padding-bottom: 25%;
 	position:relative;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #product-wrapper {
-	width:1009px;
-	height:1009px;
+	width:75%;
+	height: auto;
 	background:white;
-	margin-left:calc(50% - 504.5px);
-	margin-top:500px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:300px;
 }
 
 .position-one {
-	left: 0px;
+	left: 0%;
 }
 
 .position-two {
-	left: 253px;
+	left: 25%;
 }
 
 .position-three {
-	left:506px;
+	left: 50%;
 }
 
 .position-four {
-	left:759px;
+	left: 75%;
 }
 
 .darken {
@@ -113,37 +109,6 @@
 .selected {
 	opacity:1;
 	transition:0.7s;
-}
-
-.prod-text {
-	color:gray;
-	font-family: latin_modern_mono10_regular;
-	margin-left: 210px;
-}
-
-#prod-margin1 {
-	float: left;	
-	width: 167px;
-}
-#prod-margin2 {
-	float: left;	
-	width: 160px;
-}
-#prod-margin3 {
-	float: left;	
-	width: 160px;
-}
-#prod-margin4 {
-	float: left;	
-	width: 165px;
-}
-#prod-margin5 {
-	float: left;	
-	width: 165px;
-}
-#prod-margin6 {
-	float: left;	
-	width: 160px;
 }
 
 /* for sticky products page */
@@ -160,7 +125,7 @@
   position: relative;
   width: 100%;
   padding-left:calc(50% - 280px);
-  padding-top:12px;
+  padding-top:6px;
   padding-bottom:6px;
   opacity:0.9;
   transition:0.5s;
@@ -183,6 +148,36 @@
 }
  
 .first {
-	width:380px;
-	margin-left:-70px;
+	max-width: 170%;
+	height: auto;
+	margin-left:-35%;
+}
+
+@media (max-width: 540px) {
+	.logo {
+		width:80%;
+		padding-top:25px;
+	}
+	#shop-desc {
+		width: 70%;
+	}
+
+	.first {
+		margin-left:-30px;
+	}
+
+	#clear {
+		display: none;
+	}
+
+	.prod-icon {
+		width: 5.5%;
+	}
+
+	.sticky {
+		opacity:0 !important;
+	}
+	#product-content-wrapper {
+		height: 1300px;
+	}
 }

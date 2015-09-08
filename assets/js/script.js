@@ -15,7 +15,7 @@ $(document).ready(function(){
 		});
 	
 	$(window).scroll(function(){
-		if($(window).scrollTop() > 1200  && $(".about-section").hasClass("show") == false){
+		if($(window).scrollTop() > 800  && $(".about-section").hasClass("show") == false){
 		    $(".about-section").addClass("show");
 		  }
 	  else {
@@ -44,6 +44,9 @@ $(document).ready(function(){
 
 // for ingredients
 	$(".ing-square").click(function(){
+		
+      	$("#intro-desc").addClass("text-inactive");
+      	
 		var name = $(this).attr('id');
 		var desc = ".for[id='" + name + "-text']";
 		$(".for").removeClass("text-active");
@@ -54,6 +57,7 @@ $(document).ready(function(){
 
 // for products
 	$(".prod-icon").click(function(){
+
 		var prodname = $(this).attr('id');
 		var proddesc = ".square[id='" + prodname + "']";
 		$(".square").addClass("darken");
@@ -87,6 +91,8 @@ $(window).scroll(function(){
 
 
 var nav_container = $("#icon-wrapper");
+var ingredients = $("#ing-desc-wrapper");
+var w = window.innerWidth;
 var nav = $("nav");
 	
 nav_container.waypoint({
@@ -100,6 +106,24 @@ nav_container.waypoint({
     }
 
   });
+
+if (w < 540) {
+	ingredients.waypoint({
+	    handler: function(direction) {
+	      	nav.toggleClass('sticky', direction=='down');
+	      	if ($(".for").hasClass("text-active")== true) {
+	      		$("#intro-desc").addClass("text-inactive");
+	      	}
+
+	      	if (direction == 'down')
+	  			nav_container.css({ 'height': 10 });
+			else
+	  			nav_container.css({ 'height':'auto' });
+
+	    }
+
+	  });
+}
 
 });
 
