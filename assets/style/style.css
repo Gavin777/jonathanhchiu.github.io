@@ -39,12 +39,18 @@ body {
     line-height: 1.5em;
     font-size: 12px;
     font-family: latin_modern_mono10_regular;
-    top:calc(50% + 10px);
     right: calc(50% - 200px);
     text-align:center;
 
 }
 
+#landing-desc-home {
+	top:calc(50% - 50px);
+}
+
+.landing-desc-pages {
+	top:calc(50% + 10px);
+}
 .icon {
 	width: 36px;
     position: absolute;
