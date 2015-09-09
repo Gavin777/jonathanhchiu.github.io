@@ -1,0 +1,183 @@
+#product-content-wrapper {
+	height: auto;
+	overflow:hidden;
+}
+
+#root {
+	margin-top: -15%;
+}
+
+.prod-icon {
+	width:24px;
+	margin-left:54px;
+	opacity:0.3;
+	transition:0.7s;
+	z-index: 16;
+	margin-top:6px;
+	margin-bottom:10px;
+}
+
+.prod-icon:hover {
+	opacity:0.5;
+}
+
+#scroll-point-works {
+	top:10px;
+}
+
+#prod-line {
+	margin-top:50px;
+	margin-bottom:24px;
+}
+
+#shop-desc {
+	width:400px;
+	margin-top:-50px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	font-family: latin_modern_mono10_regular;
+	font-size:12px;
+	color:gray;
+}
+
+#icon-wrapper {
+	position:relative;
+	width:100%;
+
+}
+
+.title {
+	position:absolute;
+	font-size:120px;
+	color:white;
+	z-index:2;
+	top:calc(50% - 250px);
+	left:calc(50% - 190px);
+}
+
+.square {
+	width:24.5%;
+	height: 0px;
+	padding-bottom: 24.5%;
+	background:black;
+	margin-right:3px;
+	position:absolute;
+	overflow:hidden;
+	transition:0.5s;
+}
+
+.product-row {
+	width: 100%;
+	height: 0px;
+	padding-bottom: 25%;
+	position:relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#product-wrapper {
+	width:75%;
+	height: auto;
+	background:white;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:300px;
+}
+
+.position-one {
+	left: 0%;
+}
+
+.position-two {
+	left: 25%;
+}
+
+.position-three {
+	left: 50%;
+}
+
+.position-four {
+	left: 75%;
+}
+
+.darken {
+	opacity: 0.5;
+	transition:0.5s;
+}
+
+.selected {
+	opacity:1;
+	transition:0.7s;
+}
+
+/* for sticky products page */
+
+.sticky {
+	position: fixed !important;
+	top: 0px;
+	z-index: 15;
+}
+
+
+#prod-icon-wrapper {
+  background: white;
+  position: relative;
+  width: 100%;
+  padding-left:calc(50% - 280px);
+  padding-top:6px;
+  padding-bottom:6px;
+  opacity:0.9;
+  transition:0.5s;
+}
+
+#prod-icon-wrapper:hover {
+	opacity:1;
+}
+
+.nav-left {
+  position: absolute;
+  left: 0;  
+  bottom: -14px;
+}
+
+.nav-right {
+  position: absolute;
+  right: 0;  
+  bottom: -14px;
+}
+ 
+.first {
+	max-width: 170%;
+	height: auto;
+	margin-left:-35%;
+}
+
+@media (min-height:900px) {
+	.logo {
+		width:80%;
+		padding-top:25px;
+	}
+	#shop-desc {
+		width: 70%;
+	}
+
+	.first {
+		margin-left:-30px;
+	}
+
+	#clear {
+		display: none;
+	}
+
+	.prod-icon {
+		width: 5.5%;
+	}
+
+	.sticky {
+		opacity:0 !important;
+	}
+	#product-content-wrapper {
+		height: 2200px;
+	}
+}
