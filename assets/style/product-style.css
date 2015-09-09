@@ -181,4 +181,8 @@
 	#product-content-wrapper {
 		height: 2200px;
 	}
+
+	.footer-row-two {
+		margin-top:-50%;
+	}
 }
