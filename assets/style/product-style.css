@@ -53,7 +53,7 @@
 	color:white;
 	z-index:2;
 	top:calc(50% - 250px);
-	left:calc(50% - 190px);
+	left:calc(50% - 163px);
 }
 
 .square {
@@ -156,10 +156,11 @@
 @media (min-height:900px) {
 	.logo {
 		width:80%;
-		padding-top:25px;
+		padding-top:156px;
 	}
 	#shop-desc {
-		width: 70%;
+		width: 75%;
+		font-size:24px;
 	}
 
 	.first {
