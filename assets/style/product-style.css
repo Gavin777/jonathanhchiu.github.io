@@ -27,7 +27,7 @@
 
 #prod-line {
 	margin-top:50px;
-	margin-bottom:6px;
+	margin-bottom:24px;
 }
 
 #shop-desc {
@@ -102,7 +102,7 @@
 }
 
 .darken {
-	opacity: 0.7;
+	opacity: 0.5;
 	transition:0.5s;
 }
 
