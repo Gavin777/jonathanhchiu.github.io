@@ -128,7 +128,7 @@
 
 	#list-summary {
 		width: 100%;
-		margin-bottom: 100%;
+		margin-bottom: 50%;
 	}
 
 	#end {
@@ -150,5 +150,9 @@
 		position: absolute;
 		bottom: -150px;
 		background: white;
+	}
+
+	.footer-row-two {
+		display:none;
 	}
 }

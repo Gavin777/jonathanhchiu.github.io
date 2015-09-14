@@ -183,6 +183,14 @@
 	}
 
 	.footer-row-two {
-		margin-top:-50%;
+		display:none;
+	}
+	#product_wrapper {
+		margin-top:100px;
+
+	}
+
+	#icon-wrapper {
+		display:none;
 	}
 }
