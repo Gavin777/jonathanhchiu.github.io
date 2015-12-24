@@ -1,9 +1,9 @@
-.title {
+.page-title {
 	position:absolute;
 	font-size:120px;
 	color:white;
 	z-index:2;
-	top:calc(50% - 250px);
+	top:10vh;
 	left:calc(50% - 304px);
 
 }
